@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    /*当文字为一行是，则P的宽度小于div的宽度，p标签居中显示在盒子内，文字也就居中了 ;当大于一行时，P的宽度和div的宽度是一致的 ,文字就居左对齐了*/
+    .content {
+        width: 150px;
+        text-align: center;
+    }
+
+    /*display: inline-block使P的宽度根据文字的宽度伸缩 */
+    .content span {
+        text-align: left;
+        display: inline-block
+    }
+</style>
+<div class="content">
+    <span>内容只有一行居中</span>
+</div>
+<div class="content">
+    <span>内容多行左对齐，内容多行左对齐</span>
+</div>
+
+</html>
